@@ -1,0 +1,71 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$color-contraste: rgb(252, 135, 2);
+$color-primario: rgb(2, 29, 94);
+$color-secundario: rgb(60, 145, 234);
+$color-terciario: rgb(0, 9, 34);
+$color-cuartiario: rgb(28, 33, 42);
+
+
+
+body {
+	font-family: Roboto, Sans-serif;
+}
+
+.header {
+
+	ul {
+		padding: 30px 0;
+		li {
+			display:inline;	
+			a {
+				text-decoration:none;
+				padding:0 10px;
+				color: $color-primario;
+				&:hover{
+					color:$color-contraste;
+				}
+			}
+		}
+	}	
+	h3 {
+		padding:20px;
+		color: $color-primario;
+	}
+}
+
+.main {
+	background: url('https://www.dropbox.com/s/8s6juyr7kmcwy25/portada.jpg?raw=1') no-repeat;
+	background-position: center bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:350px;
+	color:white;
+	padding:40px 30px;
+	.btn {
+		background-color: $color-primario;
+		border: none;
+		padding:6px 40px;
+		&:hover {
+			background-color: $color-contraste;
+		}
+	}
+}
+
+.footer {
+	padding:40px;
+	p {
+		float:left;
+	}
+	.link {
+		width: 50px;
+		float: right;
+		padding: 10px;
+	}
+}
